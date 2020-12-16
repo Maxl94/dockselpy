@@ -4,6 +4,7 @@ RUN apt-get update && apt-get install -y \
     python3 python3-pip \
     fonts-liberation libappindicator3-1 libasound2 libatk-bridge2.0-0 \
     libnspr4 libnss3 lsb-release xdg-utils libxss1 libdbus-glib-1-2 \
+    libgbm1 \
     curl unzip wget \
     xvfb
 
@@ -59,5 +60,5 @@ WORKDIR /$APP_HOME
 
 COPY . $APP_HOME/
 
-CMD tail -f /dev/null
-# CMD python3 example.py
+# CMD tail -f /dev/null
+CMD python3 example.py
