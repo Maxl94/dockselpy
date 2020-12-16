@@ -6,7 +6,7 @@ from selenium import webdriver
 
 logging.getLogger().setLevel(logging.INFO)
 
-BASE_URL = 'http://www.example.com/'
+BASE_URL = 'https://www.instagram.com/p/CFi6kmRp4jo'
 
 
 def chrome_example():
